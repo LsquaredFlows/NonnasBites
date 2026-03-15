@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NONNA — Restaurant & Bar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 1. NAV — sticky, minimal -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-links">
+        <span class="nav-link">MENU</span>
+        <span class="nav-dot">·</span>
+        <span class="nav-link">OUR STORY</span>
+      </a>
+      <a href="#" class="nav-logo">
+        <img src="nav-logo.png" alt="NONNA" class="nav-logo-icon" />
+      </a>
+    </div>
+  </nav>
+
+  <!-- 2. HERO — logo through whole page -->
+  <header class="hero">
+    <img src="nonna-logo.jpeg" alt="NONNA restaurant & bar" class="hero-logo" />
+    <div class="hero-bottom">
+      <div class="hero-divider"></div>
+      <span class="hero-scroll">SCROLL</span>
+    </div>
+  </header>
+
+  <!-- 3. HERO PHOTO BAND — EAT / DRINK / VISIT -->
+  <section class="photo-band" aria-label="Eat, Drink, Visit">
+    <div class="photo-band-images">
+      <div class="photo-band-cell photo-band-eat">
+        <span class="photo-band-word">EAT</span>
+        <span class="photo-band-rule"></span>
+      </div>
+      <div class="photo-band-cell photo-band-drink">
+        <span class="photo-band-word">DRINK</span>
+        <span class="photo-band-rule"></span>
+      </div>
+      <div class="photo-band-cell photo-band-visit">
+        <span class="photo-band-word">VISIT</span>
+        <span class="photo-band-rule"></span>
+      </div>
+    </div>
+    <p class="photo-band-address">Via Roma 12 — Zagreb — +385 1 234 5678</p>
+  </section>
+
+  <!-- 4. ABOUT / STORY -->
+  <section class="about" id="our-story">
+    <div class="about-inner">
+      <div class="about-content">
+        <h2 class="about-title">MADE WITH NONNA'S HANDS</h2>
+        <p class="about-body">
+          We bring generations of recipes to your table. Every pasta shape, every sauce, every moment is crafted with the same care your nonna would give—slow, honest, and full of love.
+        </p>
+        <div class="about-rule"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. MENU PREVIEW -->
+  <section class="menu-preview" id="menu">
+    <div class="menu-inner">
+      <h2 class="menu-title">THE MENU</h2>
+      <p class="menu-sub">Handmade pasta. Seasonal produce. Old recipes.</p>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="menu-card-img"></div>
+          <span class="menu-card-category">Pasta</span>
+          <h3 class="menu-card-name">Cacio e pepe</h3>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"></div>
+          <span class="menu-card-category">Brunch</span>
+          <h3 class="menu-card-name">Eggs & polenta</h3>
+        </article>
+        <article class="menu-card">
+          <div class="menu-card-img"></div>
+          <span class="menu-card-category">Drinks</span>
+          <h3 class="menu-card-name">Aperol spritz</h3>
+        </article>
+      </div>
+      <a href="#" class="btn btn-outline menu-cta">VIEW FULL MENU</a>
+    </div>
+  </section>
+
+  <!-- 6. PHOTO GALLERY STRIP -->
+  <section class="gallery" aria-label="Gallery">
+    <div class="gallery-track">
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+    </div>
+  </section>
+
+  <!-- 7. HOURS & LOCATION -->
+  <section class="hours-location" id="reservations">
+    <div class="hours-inner">
+      <div class="hours-col hours-contact">
+        <h3 class="hours-heading">CONTACT</h3>
+        <p class="hours-text">Via Roma 12<br />10000 Zagreb</p>
+        <p class="hours-text"><a href="mailto:hello@nonna.hr">hello@nonna.hr</a></p>
+        <p class="hours-text"><a href="tel:+38512345678">+385 1 234 5678</a></p>
+      </div>
+      <div class="hours-col hours-brand">
+        <img src="nav-logo.png" alt="NONNA restaurant & bar" class="hours-logo" />
+        <div class="hours-social">
+          <a href="#" aria-label="Instagram" class="hours-social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849C2.664 6.579 4.18 5.034 7.35 4.884c1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor" class="hours-social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7-6.3-4.6L5.7 21l2.3-7-6-4.6h7.6L12 2z"/></svg>
+          </a>
+          <a href="#" aria-label="Google Maps" class="hours-social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hours-col hours-times">
+        <h3 class="hours-heading">HOURS</h3>
+        <p class="hours-text">Mon – Thu 9:00 – 23:00</p>
+        <p class="hours-text">Fri – Sat 9:00 – 01:00</p>
+        <p class="hours-text">Sunday 10:00 – 22:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <p class="footer-tagline"><em>Come hungry. Leave full.</em></p>
+    <p class="footer-copy">© 2025 Nonna Restaurant & Bar · All rights reserved</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
