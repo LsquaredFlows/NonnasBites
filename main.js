@@ -29,3 +29,39 @@
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
 })();
+
+/**
+ * Full menu: hidden until VIEW FULL MENU or nav MENU is clicked (same page)
+ */
+(function () {
+  const fullMenu = document.getElementById('full-menu');
+  if (!fullMenu) return;
+
+  function showMenuAndScroll() {
+    fullMenu.classList.add('full-menu-visible');
+    requestAnimationFrame(function () {
+      fullMenu.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  document.querySelectorAll('a[href="#full-menu"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showMenuAndScroll();
+    });
+  });
+
+  if (window.location.hash === '#full-menu') {
+    fullMenu.classList.add('full-menu-visible');
+  }
+
+  var closeBtn = fullMenu.querySelector('.menu-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      fullMenu.classList.remove('full-menu-visible');
+      if (window.history.replaceState) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    });
+  }
+})();
