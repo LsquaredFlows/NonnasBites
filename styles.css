@@ -376,9 +376,15 @@ a {
 
 /* ----- 5b. FULL BRUNCH MENU ----- */
 .full-menu {
+  display: none;
   padding: var(--section-gap) 24px;
   background: var(--bg-cream);
   border-top: 1px solid rgba(67, 89, 73, 0.12);
+  scroll-margin-top: 90px;
+}
+
+.full-menu.full-menu-visible {
+  display: block;
 }
 
 .full-menu-inner {
@@ -461,9 +467,43 @@ a {
 }
 
 @media (max-width: 768px) {
+  .full-menu {
+    padding: 64px 20px 80px;
+    scroll-margin-top: 80px;
+  }
+
+  .full-menu-title {
+    font-size: 28px;
+  }
+
+  .full-menu-sub {
+    margin-bottom: 32px;
+    font-size: 12px;
+  }
+
   .full-menu-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
+  }
+
+  .full-menu-category {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .full-menu-col .full-menu-category:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  .full-menu-list li {
+    font-size: 15px;
+    margin-bottom: 6px;
+    min-height: 24px;
+  }
+
+  .full-menu-list li.full-menu-desc {
+    font-size: 13px;
+    margin-bottom: 10px;
   }
 }
 
@@ -505,11 +545,11 @@ a {
   background-color: var(--bg-cream-dark);
 }
 
-.gallery-img:nth-child(1) { background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80'); }
-.gallery-img:nth-child(2) { background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'); }
-.gallery-img:nth-child(3) { background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80'); }
-.gallery-img:nth-child(4) { background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80'); }
-.gallery-img:nth-child(5) { background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80'); }
+.gallery-img:nth-child(1) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(2) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(3) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(4) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(5) { background-image: url('gallery-1.jpg'); }
 
 /* ----- 7. HOURS & LOCATION ----- */
 .hours-location {
