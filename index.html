@@ -13,11 +13,11 @@
   <!-- 1. NAV — sticky, minimal -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-links">
-        <span class="nav-link">MENU</span>
+      <div class="nav-links">
+        <a href="#full-menu" class="nav-link nav-link-menu">MENU</a>
         <span class="nav-dot">·</span>
-        <span class="nav-link">OUR STORY</span>
-      </a>
+        <a href="#our-story" class="nav-link">OUR STORY</a>
+      </div>
       <a href="#" class="nav-logo">
         <img src="nav-logo.png" alt="NONNA" class="nav-logo-icon" />
       </a>
@@ -49,7 +49,7 @@
         <span class="photo-band-rule"></span>
       </div>
     </div>
-    <p class="photo-band-address">Via Roma 12 — Zagreb — +385 1 234 5678</p>
+    <p class="photo-band-address"><a href="https://www.google.com/maps/search/?api=1&query=Ul.+Andrije+Ka%C4%8Di%C4%87a+Mio%C5%A1i%C4%87a+3+%26+5%2C+21000+Split%2C+Hrvatska" target="_blank" rel="noopener noreferrer">Ul. Andrije Kačića Miošića 3 & 5 — 21000 Split, Hrvatska</a> — +385 1 234 5678</p>
   </section>
 
   <!-- 4. ABOUT / STORY -->
@@ -87,7 +87,73 @@
           <h3 class="menu-card-name">Aperol spritz</h3>
         </article>
       </div>
-      <a href="#" class="btn btn-outline menu-cta">VIEW FULL MENU</a>
+      <a href="#full-menu" class="btn btn-outline menu-cta">VIEW FULL MENU</a>
+    </div>
+  </section>
+
+  <!-- 5b. FULL BRUNCH MENU (mock) -->
+  <section class="full-menu" id="full-menu">
+    <div class="full-menu-inner">
+      <h2 class="full-menu-title">BRUNCH MENU</h2>
+      <p class="full-menu-sub">Served until 15:00 · Kitchen closes 14:30</p>
+
+      <div class="full-menu-grid">
+        <div class="full-menu-col">
+          <h3 class="full-menu-category">Breakfast</h3>
+          <ul class="full-menu-list">
+            <li><span class="full-menu-name">Nonna’s eggs</span><span class="full-menu-price">45 kn</span></li>
+            <li class="full-menu-desc">Soft scramble, sourdough, seasonal greens</li>
+            <li><span class="full-menu-name">Shakshuka</span><span class="full-menu-price">52 kn</span></li>
+            <li class="full-menu-desc">Tomato & pepper stew, eggs, feta, bread</li>
+            <li><span class="full-menu-name">Avocado toast</span><span class="full-menu-price">48 kn</span></li>
+            <li class="full-menu-desc">Smashed avocado, chilli, lime, poached egg</li>
+            <li><span class="full-menu-name">Pancakes</span><span class="full-menu-price">42 kn</span></li>
+            <li class="full-menu-desc">Buttermilk stack, maple syrup, berries</li>
+            <li><span class="full-menu-name">Granola & yogurt</span><span class="full-menu-price">38 kn</span></li>
+            <li class="full-menu-desc">House granola, honey, seasonal fruit</li>
+          </ul>
+
+          <h3 class="full-menu-category">Pastries & Sides</h3>
+          <ul class="full-menu-list">
+            <li><span class="full-menu-name">Croissant</span><span class="full-menu-price">3 €</span></li>
+            <li><span class="full-menu-name">Pain au chocolat</span><span class="full-menu-price">3,50 €</span></li>
+            <li><span class="full-menu-name">Sourdough & butter</span><span class="full-menu-price">2,50 €</span></li>
+            <li><span class="full-menu-name">Side of bacon</span><span class="full-menu-price">3,50 €</span></li>
+            <li><span class="full-menu-name">Roasted tomatoes</span><span class="full-menu-price">2 €</span></li>
+          </ul>
+        </div>
+
+        <div class="full-menu-col">
+          <h3 class="full-menu-category">Brunch Plates</h3>
+          <ul class="full-menu-list">
+            <li><span class="full-menu-name">Eggs & polenta</span><span class="full-menu-price">48 kn</span></li>
+            <li class="full-menu-desc">Creamy polenta, poached eggs, parmesan</li>
+            <li><span class="full-menu-name">Benedict</span><span class="full-menu-price">55 kn</span></li>
+            <li class="full-menu-desc">Poached eggs, hollandaise, choice of ham or salmon</li>
+            <li><span class="full-menu-name">Nonna’s frittata</span><span class="full-menu-price">46 kn</span></li>
+            <li class="full-menu-desc">Seasonal vegetables, herbs, salad</li>
+            <li><span class="full-menu-name">Cacio e pepe</span><span class="full-menu-price">58 kn</span></li>
+            <li class="full-menu-desc">Handmade pasta, pecorino, black pepper</li>
+          </ul>
+
+          <h3 class="full-menu-category">Coffee & Drinks</h3>
+          <ul class="full-menu-list">
+            <li><span class="full-menu-name">Espresso</span><span class="full-menu-price">2,50 €</span></li>
+            <li><span class="full-menu-name">Cappuccino / Latte</span><span class="full-menu-price">3 €</span></li>
+            <li><span class="full-menu-name">Filter coffee</span><span class="full-menu-price">3 €</span></li>
+            <li><span class="full-menu-name">Fresh orange juice</span><span class="full-menu-price">4 €</span></li>
+            <li><span class="full-menu-name">Fresh lemonade</span><span class="full-menu-price">3,50 €</span></li>
+          </ul>
+
+          <h3 class="full-menu-category">Cocktails & Spritz</h3>
+          <ul class="full-menu-list">
+            <li><span class="full-menu-name">Aperol spritz</span><span class="full-menu-price">7 €</span></li>
+            <li><span class="full-menu-name">Campari soda</span><span class="full-menu-price">6,50 €</span></li>
+            <li><span class="full-menu-name">Bloody Mary</span><span class="full-menu-price">8 €</span></li>
+            <li><span class="full-menu-name">Mimosa</span><span class="full-menu-price">7 €</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -107,14 +173,14 @@
     <div class="hours-inner">
       <div class="hours-col hours-contact">
         <h3 class="hours-heading">CONTACT</h3>
-        <p class="hours-text">Via Roma 12<br />10000 Zagreb</p>
+        <p class="hours-text"><a href="https://www.google.com/maps/search/?api=1&query=Ul.+Andrije+Ka%C4%8Di%C4%87a+Mio%C5%A1i%C4%87a+3+%26+5%2C+21000+Split%2C+Hrvatska" target="_blank" rel="noopener noreferrer">Ul. Andrije Kačića Miošića 3 & 5<br />21000 Split, Hrvatska</a></p>
         <p class="hours-text"><a href="mailto:hello@nonna.hr">hello@nonna.hr</a></p>
         <p class="hours-text"><a href="tel:+38512345678">+385 1 234 5678</a></p>
       </div>
       <div class="hours-col hours-brand">
         <img src="nav-logo.png" alt="NONNA restaurant & bar" class="hours-logo" />
         <div class="hours-social">
-          <a href="#" aria-label="Instagram" class="hours-social-icon">
+          <a href="https://www.instagram.com/nonnasbites/" aria-label="Instagram" class="hours-social-icon" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849C2.664 6.579 4.18 5.034 7.35 4.884c1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           </a>
           <a href="#" aria-label="TripAdvisor" class="hours-social-icon">

@@ -230,12 +230,6 @@ a {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   color: var(--bg-cream);
   letter-spacing: 0.02em;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.85);
-  text-shadow:
-    0 0 2px rgba(0, 0, 0, 0.9),
-    0 0 4px rgba(0, 0, 0, 0.7),
-    1px 1px 2px rgba(0, 0, 0, 0.8),
-    -1px -1px 2px rgba(0, 0, 0, 0.8);
 }
 
 .photo-band-rule {
@@ -243,7 +237,6 @@ a {
   width: 60px;
   height: 2px;
   background: var(--bg-cream);
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
   margin-top: 12px;
 }
 
@@ -381,6 +374,139 @@ a {
   text-transform: uppercase;
 }
 
+/* ----- 5b. FULL BRUNCH MENU ----- */
+.full-menu {
+  display: none;
+  padding: var(--section-gap) 24px;
+  background: var(--bg-cream);
+  border-top: 1px solid rgba(67, 89, 73, 0.12);
+  scroll-margin-top: 90px;
+}
+
+.full-menu.full-menu-visible {
+  display: block;
+}
+
+.full-menu-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.full-menu-title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 400;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.full-menu-sub {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  opacity: 0.85;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.full-menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px 64px;
+  align-items: start;
+}
+
+.full-menu-category {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(67, 89, 73, 0.25);
+}
+
+.full-menu-col .full-menu-category:not(:first-child) {
+  margin-top: 32px;
+}
+
+.full-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.full-menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 15px;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.full-menu-list li.full-menu-desc {
+  display: block;
+  font-size: 13px;
+  opacity: 0.8;
+  margin: 0 0 12px 1.5em;
+  padding-left: 0;
+}
+
+.full-menu-name {
+  flex-shrink: 1;
+}
+
+.full-menu-price {
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  .full-menu {
+    padding: 64px 20px 80px;
+    scroll-margin-top: 80px;
+  }
+
+  .full-menu-title {
+    font-size: 28px;
+  }
+
+  .full-menu-sub {
+    margin-bottom: 32px;
+    font-size: 12px;
+  }
+
+  .full-menu-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .full-menu-category {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .full-menu-col .full-menu-category:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  .full-menu-list li {
+    font-size: 15px;
+    margin-bottom: 6px;
+    min-height: 24px;
+  }
+
+  .full-menu-list li.full-menu-desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+
 /* ----- 6. GALLERY STRIP ----- */
 .gallery {
   overflow: hidden;
@@ -419,11 +545,11 @@ a {
   background-color: var(--bg-cream-dark);
 }
 
-.gallery-img:nth-child(1) { background-image: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80'); }
-.gallery-img:nth-child(2) { background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80'); }
-.gallery-img:nth-child(3) { background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80'); }
-.gallery-img:nth-child(4) { background-image: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80'); }
-.gallery-img:nth-child(5) { background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80'); }
+.gallery-img:nth-child(1) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(2) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(3) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(4) { background-image: url('gallery-1.jpg'); }
+.gallery-img:nth-child(5) { background-image: url('gallery-1.jpg'); }
 
 /* ----- 7. HOURS & LOCATION ----- */
 .hours-location {
